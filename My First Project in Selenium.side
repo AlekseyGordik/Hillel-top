@@ -1,0 +1,563 @@
+{
+  "id": "c486ede7-fae0-4d41-a1de-f214d1712133",
+  "version": "2.0",
+  "name": "My First Project in Selenium",
+  "url": "https://www.linkedin.com/feed/",
+  "tests": [{
+    "id": "b851f9bc-1c3e-41ce-9b6f-6a1330580a72",
+    "name": "Check this text1",
+    "commands": [{
+      "id": "6f3fcdb1-d7b4-4edf-84fb-41e20a72adc7",
+      "comment": "",
+      "command": "open",
+      "target": "/jobs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6badf19-85a1-4e1c-a6df-e23036d69376",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "910x786",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04cbda73-4bd7-421d-b101-e068754b5bf2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=JavaScript / Front-End",
+      "targets": [
+        ["linkText=JavaScript / Front-End", "linkText"],
+        ["css=.jobs-filter__set:nth-child(4) > .jobs-filter__link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'JavaScript / Front-End')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '?primary_keyword=JavaScript')]", "xpath:href"],
+        ["xpath=//div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JavaScript / Front-End')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48a00013-3d3e-4fc7-86fe-2a9ee6fb40c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1 рік",
+      "targets": [
+        ["linkText=1 рік", "linkText"],
+        ["css=.jobs-filter__set:nth-child(9) > .jobs-filter__link:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'1 рік')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '?primary_keyword=JavaScript&exp_level=1y')]", "xpath:href"],
+        ["xpath=//div[8]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'1 рік')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9e0b569-7219-45b4-b3b9-d9a3ef1581be",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Вакансії JavaScript / Front-End 66"
+    }]
+  }, {
+    "id": "18646778-9b8b-410a-a55f-8a3fc75acf56",
+    "name": "Check element",
+    "commands": [{
+      "id": "9d90349a-6362-4118-9d7d-a1661ae44a25",
+      "comment": "",
+      "command": "open",
+      "target": "/my/dashboard/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12c810bf-a885-4f68-b30d-dc8b063d4aa0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "910x786",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30122785-adb5-4ae3-ba15-89e3e362243f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Джин",
+      "targets": [
+        ["linkText=Джин", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Джин')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Джин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1df77a32-7489-493c-b220-1949546ae6d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Зарплати",
+      "targets": [
+        ["linkText=Зарплати", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Зарплати')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/salaries/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Зарплати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82f63718-e21f-456e-af60-546161525a6e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Підписатись на канал",
+      "targets": [
+        ["linkText=Підписатись на канал", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Підписатись на канал')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/tg_djinni_official?src=salaries')]", "xpath:href"],
+        ["xpath=//div[4]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Підписатись на канал')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "727dae8d-86bd-4ffc-94b3-471640324620",
+    "name": "Check this text",
+    "commands": [{
+      "id": "d5bc934d-9682-409b-a98b-d568e39be950",
+      "comment": "",
+      "command": "open",
+      "target": "/my/dashboard/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "690906a6-a0f8-4379-838c-b8d81bcb98d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "910x786",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a85da00-9812-4709-9acc-95294076f185",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вакансії",
+      "targets": [
+        ["linkText=Вакансії", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Вакансії')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/jobs/my-profile/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вакансії')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abb0e3d4-5653-482d-bde5-bac66a912b2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-jobs__item:nth-child(2) .profile > span",
+      "targets": [
+        ["css=.list-jobs__item:nth-child(2) .profile > span", "css:finder"],
+        ["xpath=//li[2]/div/div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'QA Engineer (Manual)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00210adf-9865-4784-a197-6aec53ffcf2e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Junior Manual QA(Malevich)",
+      "targets": [
+        ["linkText=Junior Manual QA(Malevich)", "linkText"],
+        ["css=.item:nth-child(2) > .title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Junior Manual QA(Malevich)')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/jobs/510856-junior-manual-qa-malevich-/?from=similar_jobs5')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Junior Manual QA(Malevich) ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51cd8fe8-102b-412a-8170-1ca36bc261e7",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Джин",
+      "targets": [
+        ["linkText=Джин", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Джин')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Джин')]", "xpath:innerText"]
+      ],
+      "value": "Джин"
+    }, {
+      "id": "c0950585-74fc-4c42-9a82-52e9d3a7dad5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Джин",
+      "targets": [
+        ["linkText=Джин", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Джин')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Джин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d7d82366-9a2b-44b9-9213-741b3d37753e",
+    "name": "element not present",
+    "commands": [{
+      "id": "9827dc22-dbdf-437f-b918-29e5435d1105",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.linkedin.com/feed/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ba3dc35-df95-4746-a8b9-c801d8c80226",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "910x786",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b9ae975-a96e-4b4e-9ab3-417d6471a13a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.global-nav__primary-item:nth-child(3) .mercado-match",
+      "targets": [
+        ["css=.global-nav__primary-item:nth-child(3) .mercado-match", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "472f9203-9738-47f6-8b93-1143be624723",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.global-nav__primary-item:nth-child(3) .mercado-match",
+      "targets": [
+        ["css=.global-nav__primary-item:nth-child(3) .mercado-match", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e412812a-e1bc-4903-b4e8-67df38270983",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Сеть",
+      "targets": [
+        ["linkText=Сеть", "linkText"],
+        ["css=.global-nav__primary-item:nth-child(2) > .app-aware-link", "css:finder"],
+        ["xpath=//header[@id='global-nav']/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/mynetwork/?')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Сеть')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35347bb4-5b8b-4479-91cb-9544a6f2d8b9",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.artdeco-button--3 > span:nth-child(1)",
+      "targets": [
+        ["css=.artdeco-button--3 > span:nth-child(1)", "css:finder"],
+        ["xpath=//main[@id='main']/div/section[2]/div/div[2]/div/div/div/div/div/div/div[3]/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[3]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Сохранить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c22c3640-725f-4aab-8e0a-40a127ab802a",
+    "name": "Check button",
+    "commands": [{
+      "id": "36714f17-95ca-438d-958a-20af4d9216f8",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04313403-5661-4363-b84f-a8e429893235",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "910x786",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ff2085e-0d52-4d8f-ac49-bfa9f76ce908",
+      "comment": "",
+      "command": "click",
+      "target": "css=.-guest",
+      "targets": [
+        ["css=.-guest", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guest log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8042dcfe-3a5c-42e0-a386-f66eadc2100b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78bfb56a-1f93-4a99-b1bd-2d09e17c13a1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8094ecb2-7a4b-40dd-a61d-aa9297eb5ed0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.panel-page_heading > .btn",
+      "targets": [
+        ["css=.panel-page_heading > .btn", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3909fbe-236b-4a86-b8e2-788736a97560",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarMileage",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4de2b374-b40f-4b67-8ecc-5af2741d9c85",
+      "comment": "",
+      "command": "type",
+      "target": "id=addCarMileage",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "b58499f8-7713-4eac-a0df-79c6bbe3127b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-primary",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7945e66-8cb9-4916-a3ea-281dd9eef94f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-secondary:nth-child(1)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e91b354b-606a-4adf-9e0d-ada2831a5b14",
+    "name": "check if this element is present",
+    "commands": [{
+      "id": "a50c1e55-f421-4335-a0a1-268ea258e37d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.linkedin.com/feed/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01f4602b-5117-4311-be18-da1a6aab707c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "913x789",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14faef02-632c-4efd-b74b-641536d15da6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Сеть",
+      "targets": [
+        ["linkText=Сеть", "linkText"],
+        ["css=.global-nav__primary-item:nth-child(2) > .app-aware-link", "css:finder"],
+        ["xpath=//header[@id='global-nav']/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/mynetwork/?')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Сеть')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2677962b-d690-43d5-97c3-24151831516b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Вакансии",
+      "targets": [
+        ["linkText=Вакансии", "linkText"],
+        ["css=.global-nav__primary-item:nth-child(3) > .app-aware-link", "css:finder"],
+        ["xpath=//header[@id='global-nav']/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/jobs/?')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вакансии')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef376eec-db16-45b4-9a5c-4682794beaf4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Вакансии",
+      "targets": [
+        ["linkText=Вакансии", "linkText"],
+        ["css=.global-nav__primary-item:nth-child(3) > .app-aware-link", "css:finder"],
+        ["xpath=//header[@id='global-nav']/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/jobs/?')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вакансии')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9013b9f-cb85-4aec-ad64-b2f8ff4605a8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.global-nav__primary-item:nth-child(3) .mercado-match",
+      "targets": [
+        ["css=.global-nav__primary-item:nth-child(3) .mercado-match", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbaefbd1-8b32-43b8-b0a6-e6995be6eb25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.global-nav__primary-item:nth-child(3) .mercado-match",
+      "targets": [
+        ["css=.global-nav__primary-item:nth-child(3) .mercado-match", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0816deee-a9a0-4a7e-9714-bcde92f91d0e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Вакансии",
+      "targets": [
+        ["linkText=Вакансии", "linkText"],
+        ["css=.global-nav__primary-item:nth-child(3) > .app-aware-link", "css:finder"],
+        ["xpath=//header[@id='global-nav']/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/jobs/?')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вакансии')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4d9f133-9c40-4160-9f7e-4df2b6a1ac27",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Вакансии",
+      "targets": [
+        ["linkText=Вакансии", "linkText"],
+        ["css=.global-nav__primary-link--active", "css:finder"],
+        ["xpath=//header[@id='global-nav']/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/jobs/?')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вакансии')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb10fe80-c329-4e75-837e-cb13c14a510e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.global-nav__primary-item:nth-child(2) path",
+      "targets": [
+        ["css=.global-nav__primary-item:nth-child(2) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f92888e-e4e4-4c50-987e-aa88f5cf99c7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.global-nav__primary-item:nth-child(2) path",
+      "targets": [
+        ["css=.global-nav__primary-item:nth-child(2) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a739972-df41-464d-bc95-3ef3924d99b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.global-nav__branding-logo path",
+      "targets": [
+        ["css=.global-nav__branding-logo path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "521a7817-2ec4-4a59-857f-d0c274ab12fe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.global-nav__branding-logo .mercado-match",
+      "targets": [
+        ["css=.global-nav__branding-logo .mercado-match", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4206d6d0-d5a5-440a-b79a-e62a73882027",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee8de630-4a08-4180-8fe9-5bfc500a657b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.global-nav__branding-logo .mercado-match",
+      "targets": [
+        ["css=.global-nav__branding-logo .mercado-match", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f3b4ff6-8ec7-44a5-b706-593dc0b6cd41",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=ember503",
+      "targets": [
+        ["id=ember503", "id"],
+        ["css=#ember503", "css:finder"],
+        ["xpath=//button[@id='ember503']", "xpath:attributes"],
+        ["xpath=//li[@id='ember501']/div/div/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Создать оповещение')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "69ff5bbc-5419-4c23-b364-09bba659d0bb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b851f9bc-1c3e-41ce-9b6f-6a1330580a72"]
+  }],
+  "urls": ["https://djinni.co/", "https://www.linkedin.com/feed/", "https://qauto2.forstudy.space/"],
+  "plugins": []
+}

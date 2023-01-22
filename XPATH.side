@@ -1,0 +1,282 @@
+{
+  "id": "fedf0884-da2c-41ff-898d-d907c9cb4b92",
+  "version": "2.0",
+  "name": "XPATH",
+  "url": "https://qauto2.forstudy.space/",
+  "tests": [{
+    "id": "61382928-abb9-451e-a351-440ec14d6107",
+    "name": "Footer",
+    "commands": [{
+      "id": "bec3f6d7-1363-47fb-99ad-67308945f9a7",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11a95e7f-ba1a-4812-ace3-a11c09296e92",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x788",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d113425-a1aa-4c98-baf4-a5ef61ea3dba",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[@class='socials_icon icon icon-facebook']",
+      "targets": [
+        ["css=.icon-facebook", "css:finder"],
+        ["xpath=//div[@id='contactsSection']/div/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6180",
+      "windowTimeout": 2000
+    }, {
+      "id": "4feb842b-1fd1-4bdf-8ba6-ce4c89ce99ef",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6180}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "708815c7-cfd0-42e7-82ec-3fa3f27993cf",
+    "name": "Check this text",
+    "commands": [{
+      "id": "d3b40b3e-7ae4-4218-bbfb-660a30a46944",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9092d7af-e489-4b27-a9c7-e8dc32ab2fbd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x788",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d18a846-7210-4fc4-b1e4-1cc9144e7ec4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[2]/span",
+      "targets": [
+        ["css=.icon-telegram", "css:finder"],
+        ["xpath=//div[@id='contactsSection']/div/div/div/div/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3327",
+      "windowTimeout": 2000
+    }, {
+      "id": "a41b0a5f-b3c4-480a-98be-d5f882878007",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "509ed247-420b-419a-839a-250e92e76313",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3327}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22c2f1c4-fe56-4e6e-9ecd-6d8921f7dd59",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2935aaab-1a42-40b8-b91c-80a30a3f3e89",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e853343-8386-4864-bb74-5bc7563d08a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[@class='hero-descriptor_title display-2']",
+      "targets": [
+        ["css=.hero-descriptor_title", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Do more!')]", "xpath:innerText"]
+      ],
+      "value": "Do more!"
+    }]
+  }, {
+    "id": "6551b78e-6870-41c5-a60b-d984774ff7d1",
+    "name": "check if this element is present",
+    "commands": [{
+      "id": "a9771845-678c-409c-8f74-56fba75d7475",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f556175e-5dab-4ffb-b2d8-ef80a7c6a277",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "918x793",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6df95ed-ca1d-4478-8779-d98009d30f15",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@appscrollto=\"aboutSection\"]",
+      "targets": [
+        ["css=.header-link:nth-child(2)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'About')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9863294e-cbe3-4fb6-ace1-8502e84d4b10",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[@appscrollto=\"contactsSection\"]",
+      "targets": [
+        ["css=.header-link:nth-child(3)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Contacts')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0e50f400-6628-4041-98ef-975f965631dd",
+    "name": "Check element",
+    "commands": [{
+      "id": "9d11251c-b101-4f5c-8da2-e84bbdf4e966",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ac6bf76-bbe8-489f-b31d-7b21d18dfe8b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "918x793",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc86377a-3719-4de9-a1c9-f56f51cb09fa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@class=\"hero-descriptor_btn btn btn-primary\"]",
+      "targets": [
+        ["css=.hero-descriptor_btn", "css:finder"],
+        ["xpath=//div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e157f50-249a-44bd-a2cc-f09d9ab4211a",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//a[@class=\"x1i10hfl x1qjc9v5 xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x87ps6o x1lku1pv x1a2a7pz xtvsq51 xhk9q7s x1otrzb0 x1i1ezom x1o6z2jb x1vqgdyp x6ikm8r x10wlt62 xexx8yu xn6708d x1120s5i x1ye3gou x78zum5 x1vf8swu\"]",
+      "targets": [
+        ["linkText=Вход", "linkText"],
+        ["css=.x1vf8swu", "css:finder"],
+        ["xpath=//form[@id='login_form']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2FHillel.IT.School')]", "xpath:href"],
+        ["xpath=//form/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6434df32-7909-474c-a06c-bca34a91f5d7",
+    "name": "Check this text1",
+    "commands": [{
+      "id": "a842b0d1-5502-4ff5-abf7-1745d202541d",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecfe49ed-6874-40f4-96eb-98bb18b8096e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "921x795",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "869540a7-5cf7-432d-9e7d-59b3f20c8ce8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[2]/span",
+      "targets": [
+        ["css=.icon-telegram", "css:finder"],
+        ["xpath=//div[@id='contactsSection']/div/div/div/div/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7245",
+      "windowTimeout": 2000
+    }, {
+      "id": "f06672a8-ea3a-44d7-aac5-15c4da9337e4",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2935083b-0bdc-4cdd-b7c0-29a32c0696f7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7245}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87725669-3e85-4db4-89a6-48bdcc3cde49",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5722d0eb-b35e-471f-b18c-ff87161e6613",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44de36e7-a818-4568-af59-f8a682d40ced",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//p[contains(.,'Instructions and manuals')]",
+      "targets": [
+        ["css=.mt-lg-0 .about-block_title", "css:finder"],
+        ["xpath=//div[@id='aboutSection']/div/div/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Instructions and manuals')]", "xpath:innerText"]
+      ],
+      "value": "Instructions and manuals"
+    }]
+  }],
+  "suites": [{
+    "id": "910b7165-068b-45df-9e02-20e45385afdd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://qauto2.forstudy.space/"],
+  "plugins": []
+}
